@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: "3.8"
+services:
+  web:
+    build: .
+    image: my-simple-site:latest
+    container_name: my-simple-site
+    ports:
+      - "8081:80"   # expose site sur le port 8081 de la VM (forwardé ensuite vers l'hôte)
+    restart: unless-stopped
