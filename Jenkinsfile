@@ -5,7 +5,7 @@ pipeline {
         stage('Cloner le repository Git') {
             steps {
                 git branch: 'main', 
-                url: 'https://github.com/Exemple/SiteWeb.git',
+                url: 'https://github.com/urielnathanael/nathan/edit/main/Jenkinsfile.git',
                 credentialsId: '' // À remplir si le repo est privé
             }
         }
@@ -41,4 +41,5 @@ pipeline {
             echo '❌ Échec du déploiement'
         }
     }
+
 }
