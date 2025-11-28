@@ -5,7 +5,7 @@ pipeline {
         stage('Cloner le repository Git') {
             steps {
                 git branch: 'main', 
-                url: 'https://github.com/urielnathanael/nathan/edit/main/Jenkinsfile.git',
+                url: 'https://github.com/urielnathanael/nathan.git',
                 credentialsId: '' // À remplir si le repo est privé
             }
         }
@@ -43,3 +43,4 @@ pipeline {
     }
 
 }
+
